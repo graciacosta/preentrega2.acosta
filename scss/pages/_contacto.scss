@@ -1,0 +1,67 @@
+/* === Body - Seccion: Contactos ===*/
+
+form div{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.cont-redessociales-contacto {
+    @include display-center(flex);
+    justify-content: space-evenly;
+    margin: 2rem;
+
+
+    img {
+        max-height: 100px;
+        object-fit: cover;
+    }
+
+    }
+
+.logo-email{
+    display:none
+}
+
+.cont-form{
+    @include display-center(flex);
+    justify-content: center;
+    font-family: $ff-texto;
+    font-size: 15px;
+    
+}
+
+label {
+    color:$c-azul;
+    font-weight: $ff-titulo-estilo;
+    @include display-center;
+
+}
+
+.boton{
+    color:white;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 20px 20px 0;
+    background: $c-azul;
+    border-radius: 8px 8px 8px 8px;
+}
+
+@media (min-width: 768px) {
+    .cont-form{
+        font-size: $fs-texto-tablet;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .logo-email {
+        display: flex;
+        max-height: 300px;
+        align-items: stretch;
+    }
+
+    .cont-form{
+        margin: 2rem;
+        gap: 5rem;
+        font-size: $fs-texto-desktop;
+    }
+}

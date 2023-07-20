@@ -1,0 +1,62 @@
+/* === Body - Seccion: Historia === */
+
+.img-historia{
+    display: none;
+
+    &-mobile{
+        margin-bottom: 2rem;
+    }
+}
+
+.texto-historia {
+    font-family: $ff-texto;
+    font-size: 15px;
+    padding: 0rem 0.5rem;
+}
+
+.cont-historia {
+    text-align: justify;
+}
+
+
+@media (min-width: 768px) {
+.cont-historia {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    max-width: 100%;
+    max-height: 500px;
+    padding: 0rem 5rem;
+    justify-content: center;
+}
+
+.texto-historia {
+    position:absolute;
+    top: 48%;
+    left: 50%;
+    right: 0%;
+    transform: translate(-50%,-50%);
+    font-size: $fs-texto-tablet;
+}
+
+.img-historia{
+    display: flex;
+    max-height: 700px;
+    width: 100%;
+    max-width: 1200px;
+    filter: opacity(40%);
+    margin-bottom: 2rem;
+
+    &-mobile{
+        display: none;
+    }
+}
+
+}
+
+@media (min-width: 1200px) {
+    .texto-historia {
+        font-size: 25px;
+    }
+}
+

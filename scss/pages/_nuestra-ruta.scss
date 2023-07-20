@@ -1,0 +1,52 @@
+/* === Body - Seccion: Nuestra Ruta === */
+
+.mapa iframe{
+    display: none;
+}
+.mundo {
+    @include display-center(flex);
+    justify-content: center;
+    max-height: 10%;
+}
+
+.ruta{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr;
+    text-align: center;
+    font-family: $ff-texto;
+    font-size: 15px;
+
+    li {
+        margin: 1rem;
+    }
+
+}
+
+.cont-nuestra-ruta{
+padding: 0rem;
+}
+
+.prox-fechas{
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .mapa iframe{
+        display: flex;
+        width: 100%;
+        padding: $pad-desktop;
+    }
+    .mundo {
+        display: none;
+    }
+    .ruta{
+        font-size: $fs-texto-tablet;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ruta{
+        font-size: $fs-texto-desktop;
+    }
+}

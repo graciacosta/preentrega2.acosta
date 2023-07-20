@@ -1,0 +1,109 @@
+$c-azul: #351cad;
+$c-amarillo: #fae75a;
+$ff-titulo: "Chela One", sans-serif;
+$ff-titulo-estilo: bold;
+$ff-texto:"Bree Serif", sans-serif;
+$pad-desktop: 0rem 10rem;
+$fs-texto-desktop: 30px;
+$fs-texto-tablet: 20px;
+
+@mixin display-center($display:grid){
+    display: $display;
+    align-items: center;
+}
+
+$P-tablet: 768px;
+$P-desktop: 1200px;
+
+@mixin tablet {
+    @media (min-width: $P-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $P-desktop) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, 
+ol {
+    list-style: none;
+}
+
+
+ul {
+    padding-left: 0rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: $c-azul;
+    font-family: $ff-titulo;
+    font-style: $ff-titulo-estilo;
+    text-align: center;
+    margin: 1rem;
+    font-size: 50px;
+
+    @include tablet {
+        font-size: 80px;
+    }
+
+    @include desktop {
+        font-size: 90px;
+    }
+}
+
+h2 {
+    color: $c-azul;
+    font-family: $ff-titulo;
+    font-style: $ff-titulo-estilo;
+    font-size: 40px;
+    text-align: center;
+    margin: 1rem;
+
+    @include tablet {
+        font-size: 70px;
+    }
+
+    @include desktop {
+        font-size: 80px;
+    }
+}
+
+h3 {
+    color: $c-azul;
+    font-family: $ff-titulo;
+    font-size: $fs-texto-desktop;
+    text-align: center;
+    margin: 1rem;
+
+    @include tablet {
+        font-size: 60px;
+    }
+
+    @include desktop {
+        font-size: 70px;
+    }
+
+}
+
+p {
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}

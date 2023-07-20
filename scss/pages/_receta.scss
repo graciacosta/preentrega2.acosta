@@ -1,0 +1,81 @@
+/* === Body - Seccion: Receta ===*/
+
+.imag-receta{
+    display: none;
+
+    &-mobile{
+        display: flex;
+        max-height: 400px;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.cont-receta{
+    text-align:justify;
+
+    &-prep{
+        text-align:justify;
+    }
+}
+
+.texto-receta {
+    font-family: $ff-texto;
+    font-size: 15px;
+    padding: 0rem 0.5rem;
+
+    ul{
+        list-style: inside;
+        list-style-type: circle;
+    }
+}
+
+@media (min-width: 768px) {
+    .cont-receta{
+        @include display-center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align:justify;
+        padding: 0rem 2rem;
+
+        &-prep{
+            @include display-center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1.5fr;
+            text-align:justify;
+            padding: 0rem 2rem;
+        }
+    }
+
+    .imag-receta{
+        display: flex;
+        max-height: 400px;
+        width: 100%;
+
+        &-mobile{
+            display: none;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .texto-receta {
+        font-size: $fs-texto-desktop;
+    }
+
+    .cont-receta{
+        padding: $pad-desktop;
+
+        &-prep{
+            padding: $pad-desktop;
+            grid-template-rows: 1fr 0.5fr;
+
+            .imag-receta {
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+
+}

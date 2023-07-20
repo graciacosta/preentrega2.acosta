@@ -1,0 +1,44 @@
+/* === Header === */
+
+.navbar {
+    &-nav{
+        --bs-nav-link-color: black;
+    }
+    &-brand {
+        color: black;
+        margin-right: 0rem;
+    }
+    &-toggler {
+        color:$c-azul
+    }
+    &-collapse {
+        justify-content: flex-end;
+    }
+}
+
+.bg-body-tertiary {
+    background-color: $c-amarillo !important;
+}
+
+.container {
+    font-family: $ff-titulo;
+}
+
+header nav img{
+    max-height: 50px;
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .container,
+    .navbar-brand {
+        font-size: $fs-texto-tablet;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .navbar-brand {
+        font-size: $fs-texto-desktop;
+    }
+}

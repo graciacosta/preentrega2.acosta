@@ -1,0 +1,104 @@
+/* === Body - Seccion: Receta - Tarjetas ====*/
+
+.cont-esp {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+    gap: 5rem;
+    justify-items: center;
+}
+
+.esp-tarjeta-body {
+    flex-grow: 1;
+    background-color: $c-amarillo ;
+    @include display-center(flex);
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 3px solid black;
+    border-radius: 0px 0px 20px 20px;
+
+    a {
+        background-color: $c-azul;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        font-family: $ff-texto;
+        font-size: 15px;
+    }
+
+    p {
+        font-family: $ff-texto;
+        font-size: 15px;
+        padding: 0rem 0.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 0rem;
+        margin-top: 0.5rem;
+    }
+
+    span {
+        font-family: $ff-texto;
+        font-size: 15px;
+    }
+
+}
+
+.esp-tarjeta {
+    width: 280px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        border: 3px solid black;
+        border-bottom: none;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cont-esp {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cont-esp {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .esp-tarjeta {
+        width: 300px;
+        height: 420px;
+    }
+
+    .esp-tarjeta-body{
+        a {
+            font-size: 20px;
+        }
+        p {
+            font-size: 20px
+        }
+        h3 {
+            font-size: $fs-texto-desktop;        
+            margin-top: 1rem;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
+
+}
