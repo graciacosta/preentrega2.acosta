@@ -1,6 +1,6 @@
 /* === Body - Seccion: Contactos ===*/
 
-form div{
+form div {
     text-align: center;
     padding: 0.5rem;
 }
@@ -16,29 +16,29 @@ form div{
         object-fit: cover;
     }
 
-    }
-
-.logo-email{
-    display:none
 }
 
-.cont-form{
+.logo-email {
+    display: none
+}
+
+.cont-form {
     @include display-center(flex);
     justify-content: center;
     font-family: $ff-texto;
     font-size: 15px;
-    
+
 }
 
 label {
-    color:$c-azul;
+    color: $c-azul;
     font-weight: $ff-titulo-estilo;
     @include display-center;
 
 }
 
-.boton{
-    color:white;
+.boton {
+    color: white;
     cursor: pointer;
     padding: 5px;
     margin: 0 20px 20px 0;
@@ -47,9 +47,9 @@ label {
 }
 
 @media (min-width: 768px) {
-    .cont-form{
+    .cont-form {
         font-size: $fs-texto-tablet;
-    }    
+    }
 }
 
 @media (min-width: 1200px) {
@@ -59,7 +59,7 @@ label {
         align-items: stretch;
     }
 
-    .cont-form{
+    .cont-form {
         margin: 2rem;
         gap: 5rem;
         font-size: $fs-texto-desktop;

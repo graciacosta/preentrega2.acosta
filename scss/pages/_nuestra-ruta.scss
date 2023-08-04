@@ -1,15 +1,16 @@
 /* === Body - Seccion: Nuestra Ruta === */
 
-.mapa iframe{
+.mapa iframe {
     display: none;
 }
+
 .mundo {
     @include display-center(flex);
     justify-content: center;
     max-height: 10%;
 }
 
-.ruta{
+.ruta {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 7fr;
@@ -23,30 +24,32 @@
 
 }
 
-.cont-nuestra-ruta{
-padding: 0rem;
+.cont-nuestra-ruta {
+    padding: 0rem;
 }
 
-.prox-fechas{
+.prox-fechas {
     margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
-    .mapa iframe{
+    .mapa iframe {
         display: flex;
         width: 100%;
         padding: $pad-desktop;
     }
+
     .mundo {
         display: none;
     }
-    .ruta{
+
+    .ruta {
         font-size: $fs-texto-tablet;
     }
 }
 
 @media (min-width: 1200px) {
-    .ruta{
+    .ruta {
         font-size: $fs-texto-desktop;
     }
 }

@@ -2,12 +2,12 @@ $c-azul: #351cad;
 $c-amarillo: #fae75a;
 $ff-titulo: "Chela One", sans-serif;
 $ff-titulo-estilo: bold;
-$ff-texto:"Bree Serif", sans-serif;
+$ff-texto: "Bree Serif", sans-serif;
 $pad-desktop: 0rem 10rem;
 $fs-texto-desktop: 30px;
 $fs-texto-tablet: 20px;
 
-@mixin display-center($display:grid){
+@mixin display-center($display: grid) {
     display: $display;
     align-items: center;
 }
@@ -38,7 +38,7 @@ a {
     color: inherit;
 }
 
-ul, 
+ul,
 ol {
     list-style: none;
 }

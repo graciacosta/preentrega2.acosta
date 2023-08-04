@@ -1,16 +1,19 @@
 /* === Header === */
 
 .navbar {
-    &-nav{
+    &-nav {
         --bs-nav-link-color: black;
     }
+
     &-brand {
         color: black;
         margin-right: 0rem;
     }
+
     &-toggler {
-        color:$c-azul
+        color: $c-azul
     }
+
     &-collapse {
         justify-content: flex-end;
     }
@@ -24,12 +27,13 @@
     font-family: $ff-titulo;
 }
 
-header nav img{
+header nav img {
     max-height: 50px;
     margin-right: 0.5rem;
 }
 
 @media (min-width: 768px) {
+
     .container,
     .navbar-brand {
         font-size: $fs-texto-tablet;
@@ -37,6 +41,7 @@ header nav img{
 }
 
 @media (min-width: 1200px) {
+
     .container,
     .navbar-brand {
         font-size: $fs-texto-desktop;
